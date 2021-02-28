@@ -1,0 +1,219 @@
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* CSS3的盒子模型 */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* 设置一些元素点击时不显示高亮 */
+  -webkit-tap-highlight-color: transparent;
+  /* 让移动端浏览器的对按钮和输入框的样式无效，这样才能自定义样式 */
+  -webkit-appearance: none;
+}
+body {
+  min-width: 320px;
+  max-width: 20rem;
+  margin: 0 auto;
+  background-color: #F2F4F7;
+}
+a {
+  text-decoration: none;
+}
+.part1 {
+  background-color: #fff;
+  padding-bottom: 1.146667rem;
+}
+.part2 {
+  background-color: #fff;
+  padding: 1.2rem 0.986667rem 1.013333rem 0.986667rem;
+  margin-top: 0.266667rem;
+}
+.header {
+  width: 20rem;
+  text-align: center;
+  line-height: 2.133333rem;
+  height: 2.133333rem;
+  border-bottom: 1px solid #EAEAEA;
+}
+.header h4 {
+  font-weight: 400;
+  color: #1c1c1c;
+  font-size: 0.933333rem;
+  height: 100%;
+}
+.nav {
+  display: flex;
+  height: 13.333333rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav a {
+  width: 33.33%;
+  color: #707070;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav a img {
+  width: 3.706667rem;
+  height: 3.706667rem;
+}
+.nav a span {
+  font-size: 0.666667rem;
+}
+.ad a img {
+  display: block;
+  width: 19.253333rem;
+  height: 4.053333rem;
+  margin: 0 auto;
+}
+.part2 {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.content {
+  line-height: 1.013333rem;
+}
+.content .content-hd {
+  height: 1.013333rem;
+  display: flex;
+  justify-content: space-between;
+}
+.content .content-hd h4 {
+  font-size: 0.746667rem;
+}
+.content .content-hd h4 img {
+  width: 1.013333rem;
+  height: 1.013333rem;
+  vertical-align: middle;
+  margin-top: -0.106667rem;
+}
+.content .content-hd a {
+  color: #333;
+  font-size: 0.586667rem;
+}
+.contentbd {
+  position: relative;
+  width: 100%;
+  --swiper-navigation-color: #333;
+  /* 单独设置按钮颜色 */
+}
+.contentbd .mianshi {
+  width: 14.4rem;
+  height: 100%;
+}
+.contentbd .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+.contentbd .swiper-slide-active,
+.contentbd .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 999;
+  opacity: 1;
+}
+.contentbd .swiper-container a {
+  display: block;
+  width: 9.013333rem;
+  height: 10.026667rem;
+  margin-top: 0.266667rem;
+}
+.contentbd .swiper-container a img {
+  width: 100%;
+  height: 100%;
+}
+.contentbd .swiper-container p {
+  color: #333;
+  font-size: 0.666667rem;
+  margin-top: 0.506667rem;
+}
+.up-move {
+  padding-bottom: 3.466667rem;
+}
+.study-contentbd {
+  margin-top: 0.533333rem;
+}
+.study-contentbd .study {
+  padding: 0.266667rem;
+  width: 100%;
+  height: 100%;
+}
+.study-contentbd .swiper-slide {
+  text-align: left;
+  background: #fff;
+  width: 7.733333rem;
+  height: 9.066667rem;
+  border-radius: 0.266667rem;
+  box-shadow: 0 0px 0.266667rem rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: scale(1);
+}
+.study-contentbd .swiper-slide img {
+  width: 7.306667rem;
+  height: 4.56rem;
+}
+.study-contentbd .swiper-slide h5 {
+  padding-left: 0.24rem;
+  font-size: 0.666667rem;
+  font-weight: 400;
+  margin: 0.533333rem 0;
+}
+.study-contentbd .swiper-slide p {
+  margin-top: 0;
+  padding-left: 0.24rem;
+  width: 100%;
+  color: #666;
+  font-size: 0.586667rem;
+}
+.study-contentbd .swiper-slide p span {
+  color: #FF4400;
+}
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 3.013333rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  border-top: 1px solid #E2E2E2;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+.footer a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer a img {
+  width: 1.04rem;
+  height: 1.093333rem;
+  margin-bottom: 10px;
+}
+.footer a span {
+  font-size: 0.586667rem;
+}

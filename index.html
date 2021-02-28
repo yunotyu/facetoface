@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.csss">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="part1">
+        <header class="header">
+            <h4>黑马面面</h4>
+        </header>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <a href="#">
+                <img src="icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#"><img src="icons/icon2.png" alt="">
+                <span>笔试</span></a>
+            <a href="#"><img src="icons/icon3.png" alt="">
+                <span>技术面试</span></a>
+            <a href="#"><img src="icons/icon4.png" alt="">
+                <span>模拟面试</span></a>
+            <a href="#"><img src="icons/icon5.png" alt="">
+                <span>面试技巧</span></a>
+            <a href="#"><img src="icons/icon6.png" alt="">
+                <span>薪资查询</span></a>
+        </div>
+        <!-- 广告 -->
+        <div class="ad">
+            <a href="#">
+                <img src="images/go.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 面试技巧模块 -->
+    <div class="part2">
+        <div class="content">
+            <div class="content-hd">
+                <h4>
+                    <img src="./icons/i2.png" alt=""> 就业指导
+                </h4>
+                <a href="#">更多>></a>
+            </div>
+            <!-- 面试技巧模块 -->
+            <div class="contentbd">
+                <!-- 如果有多个轮播图，记得多加个类名，这样不会导致多个轮播图一起动，下面js的new，就得改成这个类名 -->
+                <div class="swiper-container mianshi">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic.png" alt="">
+                            </a>
+                            <p>老师教你对应面试技巧</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic1.png" alt="">
+                            </a>
+                            <p>老师教你对应面试技巧</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic2.png" alt="">
+                            </a>
+                            <p>老师教你对应面试技巧</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 按钮不能放到上面的swiper容器里，如果往外移动，会被切掉，因为overflow：hidden。 -->
+                <div class="swiper-button-prev"></div>
+                <!--左箭头。如果放置在swiper-container外面，需要自定义样式。然后把父盒子设置为relative就可以保证在左右边框了-->
+                <div class="swiper-button-next"></div>
+                <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            </div>
+        </div>
+    </div>
+
+    <!-- 充电学习模块 -->
+    <div class="part2 up-move">
+        <div class="content">
+            <div class="content-hd">
+                <h4>
+                    <img src="./icons/i2.png" alt=""> 就业指导
+                </h4>
+                <a href="#">更多>></a>
+            </div>
+            <!-- 充电学习模块 -->
+            <div class="contentbd">
+                <div class="study-contentbd">
+                    <!-- 如果有多个轮播图，记得多加个类名，这样不会导致多个轮播图一起动，下面js的new，就得改成这个类名 -->
+                    <div class="swiper-container study">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/pic1.png" alt="">
+                                <h5>说地道英语，告别中式英语</h5>
+                                <p><span>125</span>人学习</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/pic2.png" alt="">
+                                <h5>说地道英语，告别中式英语</h5>
+                                <p><span>125</span>人学习</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/pic1.png" alt="">
+                                <h5>说地道英语，告别中式英语</h5>
+                                <p><span>125</span>人学习</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/pic1.png" alt="">
+                                <h5>说地道英语，告别中式英语</h5>
+                                <p><span>125</span>人学习</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <a href="#"><img src="icons/home.png" alt=""><span>首页</span></a>
+        <a href="#"><img src="icons/net.png" alt=""><span>技术面试</span></a>
+        <a href="#"><img src="icons/ms.png" alt=""><span>模拟面试</span></a>
+        <a href="#"><img src="icons/user.png" alt=""><span>我的主页</span></a>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        // 第一个轮播图，js运行到这里时，立马执行这个函数
+        (function() {
+            var swiper = new Swiper('.mianshi', {
+                // 可以预览到2个图片，可以为小数，也可以2个的一半加起来为1个
+                slidesPerView: 2,
+                // 图片的间距为30,这样遮挡其他图片的一部分
+                spaceBetween: 30,
+                // 将主图片显示在中间，默认显示在左边
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+        //第二个轮播图
+        (function() {
+            var swiper = new Swiper('.study', {
+                slidesPerView: 2.2,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            })
+        })();
+    </script>
+</body>
+
+</html>
